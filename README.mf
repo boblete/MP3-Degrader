@@ -1,0 +1,28 @@
+TDLSR
+sh bashScript.sh "asset" "wav" "128k" 100
+
+A script to degrade a file using the mp3 codec  - ths will run an mp3 codec compresser repeatedly on a file over and over...
+to turn a good file into slurry
+
+
+to use put a file or a few files of the same file type (e.g. wav) into the asset folder
+-asset/test.wav
+then navigate to this folder
+
+cd "nam,e of folder here e.g where this readme is"
+run the script
+sh bashScript.sh "asset" "wav" "128k"
+
+here
+"asset" is the folder to look in for files
+"wav" is the file type
+"128k" is the quality to encode repeatedly
+100 is how many versions you want
+
+you can change the encoder in the code but currently using libmp3lame
+
+
+Make sure you move everything out of assets before re-running on a new file....
+
+
+TODO - look at phase inversion script not currently working - unsure why...
